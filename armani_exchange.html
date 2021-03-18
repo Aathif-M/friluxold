@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Attached Boostrap CSS style sheet -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- attaced custom style sheet -->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- attach the JS files -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!--Linked Google Font-->
+
+
+    <title>Frilux: Gallery</title>
+
+    <style media="screen">
+
+    body{
+      background-color: #caced1;
+    }
+
+    #container{
+      padding-top: 100px;
+      min-height: 100%;
+    }
+
+    .container img{
+      width: 100%;
+      border-radius: 2%;
+    }
+
+    #button_row{
+      display:block;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    #button_row a{
+      width: 75px;
+      height: 45px;
+      padding: none;
+      border-radius: 2%;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      margin:auto;
+    }
+
+    #button_row img{
+      width: 75px;
+      box-sizing: border-box;
+      border-radius: 5%;
+      box-shadow: 1px 1px 4px #000;
+      transition: 0.2s;
+    }
+
+    #button_row img:hover{
+      box-shadow: 0px 0px 5px 5px #1f586b;
+    }
+
+    .row{
+      display: flex;
+      justify-content: center;
+    }
+
+    .prod{
+      display: inline-block;
+      margin-bottom: 30px;
+      /* background-color:#b57330; */
+    }
+
+    .prod img{
+      box-shadow: 0px 2px 4px #9a9a9a;
+      transition: 0.2s;
+    }
+
+    .prod img:hover{
+      box-shadow: 0px 2px 3px 3px #918f8f;
+    }
+
+    .prod h5{
+      margin: 10px 0px 10px 0px;
+      display: flex;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .prod h5:hover{
+      letter-spacing: 1px;
+    }
+
+    .prod h6{
+      font-weight: 700;
+      font-size: 30px;
+      margin: 0px 0px 25px 0px;
+      color: #002029;
+      display: flex;
+      justify-content: center;
+    }
+
+    .prod p{
+      line-height: 0px;
+      margin-left: 0px 10px 0px 50px;
+      transition: 0.2s;
+    }
+
+    .prod p:hover{
+      background-color: #9f9f9f;
+      box-shadow: 0px 2px 15px 5px #9f9f9f;
+    }
+
+    .prod p span{
+      float: right;
+      font-weight:800;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="nav_bar col-lg-12 col-md-12 col-sm-12">
+
+      <div class="container" id="nav_container">
+        <a href="./index.html">
+          <img src="./frilux/Logo 3.jpg" alt="logo" id="logo">
+        </a>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./burberry.html" >Gallery</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="./about_us.html">About Us</a>
+          </li>
+          <li>
+            <a href="./sign_up.html">Sign Up</a>
+          </li>
+        </ul>
+
+      </div><!--container div ends here-->
+
+    </div><!--nav_bar div ends here-->
+
+    <div class="container" id="container">
+
+      <div id="button_row" class="row">
+
+        <a class="mx-3" href="./burberry.html">
+          <img class="mx-3" src="./frilux/Burberry_logo.jpg" alt="Burberry_logo">
+        </a>
+
+        <a class="mx-3" href="./armani_exchange.html">
+          <img style="border: 3px solid #002029;" class="mx-3" class="mx-3" src="./frilux/AX_logo.jpg" alt="AX_logo">
+        </a>
+
+        <a class="mx-3" href="./oakley.html">
+          <img class="mx-3" src="./frilux/Oakley_logo.jpg" alt="Oakley_logo">
+        </a>
+
+        <a class="mx-3" href="./ray_ban.html">
+          <img class="mx-3" src="./frilux/Ray-Ban_logo.jpg" alt="Ray-Ban_logo">
+        </a>
+
+        <a class="mx-3" href="./gucci.html">
+          <img class="mx-3" src="./frilux/Gucci_logo.jpg" alt="Gucci_logo">
+        </a>
+
+      </div><!--#button_row ends here-->
+
+      <div class="row my-5" id="row1">
+
+        <div class="prod  col-lg-3 col-md-10 mx-5">
+
+          <a  data-fancybox="gallery" href="./frilux\Sun Glasses\Gallery/AX4074S.jpg"><img src="./frilux\Sun Glasses\Gallery/AX4074S.jpg"></a>
+          <h5>AX4074S</h5>
+          <h6 >$325</h6>
+          <p>Shape: <span>Square</span></p>
+          <hr>
+
+          <p>Frame material: <span>Metal</span></p>
+          <hr>
+
+          <p>Frame color: <span>Gold Shiny</span></p>
+          <hr>
+
+          <p>Lens material: <span>Not Glass</span></p>
+          <hr>
+
+          <p>Lens color: <span>Grey-Black</span></p>
+          <hr>
+
+        </div><!--prod div ends here-->
+
+        <div class="prod  col-lg-3 col-md-10 mx-4  ">
+
+          <a  data-fancybox="gallery" href="./frilux\Sun Glasses\Gallery/AX4069S.jpg"><img src="./frilux\Sun Glasses\Gallery/AX4069S.jpg"></a>
+          <h5>AX4069S</h5>
+          <h6 >$325</h6>
+          <p>Shape: <span>Square</span></p>
+          <hr>
+
+          <p>Frame material: <span>Metal</span></p>
+          <hr>
+
+          <p>Frame color: <span>Gold Shiny</span></p>
+          <hr>
+
+          <p>Lens material: <span>Not Glass</span></p>
+          <hr>
+
+          <p>Lens color: <span>Grey-Black</span></p>
+          <hr>
+
+        </div><!--prod div ends here-->
+
+        <div class="prod  col-lg-3 col-md-10 mx-5  ">
+
+          <a  data-fancybox="gallery" href="./frilux\Sun Glasses\Gallery/AX4026S.jpg"><img src="./frilux\Sun Glasses\Gallery/AX4026S.jpg"></a>
+          <h5>AX4026S</h5>
+          <h6 >$325</h6>
+          <p>Shape: <span>Square</span></p>
+          <hr>
+
+          <p>Frame material: <span>Metal</span></p>
+          <hr>
+
+          <p>Frame color: <span>Gold Shiny</span></p>
+          <hr>
+
+          <p>Lens material: <span>Not Glass</span></p>
+          <hr>
+
+          <p>Lens color: <span>Grey-Black</span></p>
+          <hr>
+
+        </div><!--prod div ends here-->
+
+      </div><!--row div ends here-->
+
+      <div class="row" id="row2">
+
+        <div class="prod  col-lg-3 col-md-10 mx-5 ">
+
+          <a  data-fancybox="gallery" href="./frilux\Sun Glasses\Gallery/AX2012S.jpg"><img src="./frilux\Sun Glasses\Gallery/AX2012S.jpg"></a>
+          <h5>AX2012S</h5>
+          <h6 >$325</h6>
+          <p>Shape: <span>Square</span></p>
+          <hr>
+
+          <p>Frame material: <span>Metal</span></p>
+          <hr>
+
+          <p>Frame color: <span>Gold Shiny</span></p>
+          <hr>
+
+          <p>Lens material: <span>Not Glass</span></p>
+          <hr>
+
+          <p>Lens color: <span>Grey-Black</span></p>
+          <hr>
+
+        </div><!--prod div ends here-->
+
+        <div class="prod  col-lg-3 col-md-10 mx-5  ">
+
+          <a  data-fancybox="gallery" href="./frilux\Sun Glasses\Gallery/AX2002.jpg"><img src="./frilux\Sun Glasses\Gallery/AX2002.jpg"></a>
+          <h5>AX2002</h5>
+          <h6 >$325</h6>
+          <p>Shape: <span>Square</span></p>
+          <hr>
+
+          <p>Frame material: <span>Metal</span></p>
+          <hr>
+
+          <p>Frame color: <span>Gold Shiny</span></p>
+          <hr>
+
+          <p>Lens material: <span>Not Glass</span></p>
+          <hr>
+
+          <p>Lens color: <span>Grey-Black</span></p>
+          <hr>
+
+        </div><!--prod div ends here-->
+
+      </div><!--row div ends here-->
+
+    </div><!--container div ends here-->
+
+    <div class="footer">
+      <div class="container" id="footer">
+        <p>2021 &copy; All Rights Reserved | Designed and Developed by Mohamed Aathif</p>
+        <a href="#"><img src="./frilux/Social Media/Facebook.jpg" alt="Facebook icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Google+.jpg" alt="Google+ icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Instagram.jpg" alt="Instagram icon"></a>
+        <a href="#"><img src="./frilux/Social Media/LinkedIn.jpg" alt="LinkedIn icon"></a>
+        <a href="#"><img src="./frilux/Social Media/Twitter.jpg" alt="Twitter icon"></a>
+      </div><!--container div ends here-->
+    </div><!--footer div ends here-->
+
+
+  </body>
+</html>
